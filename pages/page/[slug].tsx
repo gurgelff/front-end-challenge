@@ -57,9 +57,7 @@ const Page: NextPage<PostsProps> = ({ posts, totalPages, page }) => {
           content="blog, apiki, desenvolvimento, wordpress"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="revisit-after" content="1 days" />
         <meta name="language" content="pt-br" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <h1 className={styles.blog_title}>Blog da Apiki</h1>
       <main
@@ -155,5 +153,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     },
   };
 };
+
+export const config = { amp: true };
 
 export default Page;

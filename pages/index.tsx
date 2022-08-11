@@ -24,4 +24,6 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
+export const config = { amp: true };
+
 export default Home;
