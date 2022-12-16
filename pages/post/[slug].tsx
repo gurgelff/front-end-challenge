@@ -15,7 +15,7 @@ import {
 } from "../../types/Posts";
 import AuthorSection from "../../components/AuthorSection";
 
-const url = "https://blog.apiki.com/wp-json/wp/v2/posts?_embed&categories=518";
+const url = "https://wpstaging.tomthorley.digital/wp-json/wp/v2/posts?_embed";
 
 export const Post: NextPage<PostState> = ({
   title,

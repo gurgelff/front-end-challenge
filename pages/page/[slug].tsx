@@ -13,7 +13,7 @@ import styles from "../../styles/Home.module.scss";
 import AuthorSection from "../../components/AuthorSection";
 
 const getTenPostsUrl =
-  "https://blog.apiki.com/wp-json/wp/v2/posts?_embed&categories=518";
+  "https://wpstaging.tomthorley.digital/wp-json/wp/v2/posts?_embed";
 
 const Page: NextPage<PostsProps> = ({ posts, totalPages, page }) => {
   const router = useRouter();
@@ -50,18 +50,18 @@ const Page: NextPage<PostsProps> = ({ posts, totalPages, page }) => {
   return (
     <>
       <Head>
-        <title>Blog da Apiki | Desenvolvimento</title>
-        <meta name="description" content="Blog da Apiki" />
+        <title>Blog do Thor</title>
+        <meta name="description" content="Blog do Thor" />
         <meta
           name="keywords"
-          content="blog, apiki, desenvolvimento, wordpress"
+          content="blog, desenvolvimento, wordpress"
         />
         <meta name="robots" content="index, follow" />
         <meta name="revisit-after" content="1 days" />
         <meta name="language" content="pt-br" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <h1 className={styles.blog_title}>Blog da Apiki</h1>
+      <h1 className={styles.blog_title}>Blog do Thor</h1>
       <main
         className={styles.posts_container}
         role="main"

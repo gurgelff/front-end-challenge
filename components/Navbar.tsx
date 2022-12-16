@@ -12,7 +12,7 @@ const Navbar = () => {
       <a
         role="home"
         aria-label="Link da página inicial"
-        href="https://blog.apiki.com/"
+        href="https://tomthorley.digital/"
         className={styles.navbar_link}
       >
         <Image src={logo} alt="logo" width={50} height={50} />
@@ -21,7 +21,7 @@ const Navbar = () => {
       <a
         role="about"
         aria-label="Link da página sobre nós"
-        href="https://blog.apiki.com/sobre/"
+        href="https://tomthorley.digital/"
         className={styles.navbar_link}
       >
         Sobre nós
@@ -29,7 +29,7 @@ const Navbar = () => {
       <a
         role="contact"
         aria-label="Link da página de contatos"
-        href="https://apiki.com/atendimento/"
+        href="https://tomthorley.digital"
         className={styles.navbar_link}
       >
         Contato

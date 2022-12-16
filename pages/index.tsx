@@ -4,7 +4,7 @@ import { fetchPosts } from "../utils/post";
 import Page from "./page/[slug]";
 
 const getTenPostsUrl =
-  "https://blog.apiki.com/wp-json/wp/v2/posts?_embed&categories=518";
+  "https://wpstaging.tomthorley.digital/wp-json/wp/v2/posts?_embed";
 
 const Home: NextPage<PostsProps> = (props) => {
   return <Page {...props} />;
